@@ -1,0 +1,220 @@
+{% load static %}
+
+<!DOCTYPE html>   
+<!--
+Template Name: Shiphile
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Alzheimar's disease </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .bgded.overlay {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #pageintro {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+
+  h3.heading {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  .input100 {
+    padding: 12px 15px;
+    margin: 10px 0;
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+  }
+
+  select.input100 {
+    width: 270px;
+  }
+
+  .btn {
+    background-color: #e60000;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #cc0000;
+  }
+
+  .label-input100 {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: #ddd;
+    font-size: 14px;
+  }
+
+  #backtotop {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 999;
+    transition: background 0.3s ease;
+  }
+
+  #backtotop:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+article h3.heading {
+  font-size: 40px;
+  line-height: 1.3;
+  word-break: break-word;
+  text-align: center;
+}
+
+article p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #f1f1f1;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+#pageintro {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+
+</style>
+
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/demo/backgrounds/1234.jpg' %}');"> 
+  <!-- ################################################################################################ -->
+  
+
+  
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article>
+      <h3 class="heading">   Alzheimer Disease Prediction using Deep Learning Algorithms   </h3>
+      <p>Alzheimer's disease (AD), the most common form of dementia, is a major challenge for healthcare in the twenty-first century. An estimated 5.5 million people aged 65 and older are living with AD, and AD is the sixth-leading cause of death in the United States.</p>
+      
+    </article>
+    <!-- ################################################################################################ -->
+    <form action='output' method="POST" enctype="multipart/form-data" class="login100-form validate-form" style="display: flex; flex-direction: column; align-items: center; gap: 20px; margin-top: 30px;">
+      {% csrf_token %}
+    
+      <div style="text-align: center;">
+        <input class="input100" type="file" name="file" style="width: 300px; padding: 12px; border-radius: 10px;">
+        <span class="label-input100">Image</span>
+      </div>
+    
+      <div style="text-align: center;">
+        <select class="input100" name="algo" style="width: 300px; padding: 12px; border-radius: 10px;">
+          <option value='cnn'> CNN </option>
+          <option value='vgg16'> VGG16 </option>
+        </select>
+        <span class="label-input100">Algorithm</span>
+      </div>
+    
+      <button type="submit" class="btn" style="padding: 12px 30px; font-weight: bold; font-size: 16px;">PREDICT</button>
+    </form>
+    
+
+
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+{% load static %}
+
+<!DOCTYPE html>   
+<!--
+Template Name: Shiphile
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+<title>Alzheimar's disease </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="{% static 'layout/styles/layout.css' %}" rel="stylesheet" type="text/css" media="all">
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+  }
+
+  <div id="pageintro" class="hoc clear"> 
+    <article style="max-width: 500px; margin: auto; background: rgba(0, 0, 0, 0.6); padding: 40px; border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); backdrop-filter: blur(10px);">
+  <h3 class="heading" style="font-size: 40px; margin-bottom: 20px;">Prediction Result</h3>
+
+  <p style="font-size: 22px; margin-bottom: 30px;">The model has predicted the class as:</p>
+
+  <a class="btn" href="#" style="font-size: 20px;">{{ out }}</a>
+</article>
+
+</div>
+
+
+  h3.heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+  }
+
+  .btn {
+    background-color: #e60000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  }
+
+  .btn:hover {
+    background-color: #cc0000;
+    cursor: pointer;
+  }
+
+  footer p, article p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #f2f2f2;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  }
+
+  ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+    color: #e0e0e0;
+  }
+
+  a#backtotop {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 999;
+    transition: background 0.3s ease;
+  }
+
+  a#backtotop:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+</style>
+
+</head>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('{% static 'images/demo/backgrounds/7894.jpg' %}'); min-height: 100vh; background-size: cover; background-position: center;">
+
+  <!-- ################################################################################################ -->
+  
+  <!-- ################################################################################################ -->
+  <!-- ################################################################################################ -->
+  
+  <!-- ################################################################################################ -->
+  <div id="pageintro" class="hoc clear"> 
+    <!-- ################################################################################################ -->
+    <article style="max-width: 500px; margin: auto; background: rgba(0, 0, 0, 0.6); padding: 40px; border-radius: 20px; box-shadow: 0 8px 32px rgba(0,0,0,0.3); backdrop-filter: blur(10px);">
+      <h3 class="heading" style="font-size: 40px; margin-bottom: 20px;">Prediction Result</h3>
+    
+      <p style="font-size: 22px; margin-bottom: 30px;">The model has predicted the class as:</p>
+    
+      <a class="btn" href="#" style="font-size: 20px;">{{ out }}</a>
+    
+      <br><br>
+    
+    </article>
+    
+    <!-- ################################################################################################ -->
+  </div>
+  <!-- ################################################################################################ -->
+</div>
+<!-- End Top Background Image Wrapper -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+
+
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="{% static 'layout/scripts/jquery.min.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.backtotop.js' %}"></script>
+<script src="{% static 'layout/scripts/jquery.mobilemenu.js' %}"></script>
+</body>
+</html>
