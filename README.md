@@ -111,6 +111,8 @@ Train CNN / VGG16 Models
 Model Evaluation
       ↓
 Prediction
+     ↓
+Frontend Deployment
 
 💻 Frontend
 A simple frontend interface was developed using Streamlit where users can:
@@ -127,9 +129,10 @@ VGG16	85%
 
 ✅ VGG16 was selected as the final model due to its superior accuracy and stability.
 
+
+
 <img width="701" height="712" alt="image" src="https://github.com/user-attachments/assets/5ae022c3-ab63-45e8-b300-c76a411a5a54" />
 
 <img width="708" height="268" alt="image" src="https://github.com/user-attachments/assets/b604fc6c-3da4-458e-97d4-eca53fa81de9" />
 
-      ↓
-Frontend Deployment
+
